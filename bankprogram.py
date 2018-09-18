@@ -32,8 +32,12 @@ while menu != 5:
             loan = int(input("HOW MUCH DO YOU WANT TO LOAN: "))
         except:
             print("ONLY NUMBERS ALLOWED")
-        charge = loan * rate
-        print("YOU WILL HAVE TO PAY ", charge, "TO PAY OFF YOUR LOAN")
+        try:
+            days = int(input("HOW MANY DAYS DO YOU WANT TO LOAN FOR: "))
+        except:
+            print("ONLY NUMBERS ALLOWED")
+        charge = loan * (rate ^ days)
+        print("YOU WILL HAVE TO PAY ", charge, "TO PAY OFF YOUR LOAN\n", "AND YOU HAVE ", days, "DAYS TO PAY OFF YOUR LOAN")
     elif menu == 5:
         print("GOODBYE")
     else:

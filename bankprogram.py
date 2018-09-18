@@ -1,7 +1,7 @@
 balance = 100
 menu = 0
-while menu != 4:
-    print("***PRESS 1 TO DEPOSIT***\n" + "***PRESS 2 TO WITHDRAW***\n" + "***PRESS 3 TO SHOW YOUR ACCOUNT BALANCE***\n" + "***PRESS 4 TO EXIT PROGRAM***")
+while menu != 5:
+    print("***PRESS 1 TO DEPOSIT***\n" + "***PRESS 2 TO WITHDRAW***\n" + "***PRESS 3 TO SHOW YOUR ACCOUNT BALANCE***\n" + "***PRESS 4 TO TAKE A LOAN***\n" + "***PRESS 5 TO EXIT PROGRAM***")
     try:
         menu = int(input("MAKE YOUR SELECTION: "))
     except:
@@ -26,7 +26,8 @@ while menu != 4:
     elif menu == 3:
         print(balance, "SEK")
     elif menu == 4:
+        loan
+    elif menu == 5:
         print("GOODBYE")
     else:
         print("NOT A VALID CHOICE")
-#qweasd

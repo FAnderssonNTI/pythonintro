@@ -1,5 +1,6 @@
 balance = 100
 menu = 0
+float(rate) = 0.15
 while menu != 5:
     print("***PRESS 1 TO DEPOSIT***\n" + "***PRESS 2 TO WITHDRAW***\n" + "***PRESS 3 TO SHOW YOUR ACCOUNT BALANCE***\n" + "***PRESS 4 TO TAKE A LOAN***\n" + "***PRESS 5 TO EXIT PROGRAM***")
     try:
@@ -26,7 +27,11 @@ while menu != 5:
     elif menu == 3:
         print(balance, "SEK")
     elif menu == 4:
-        loan
+        print("THE CURRENT RATE IS ", rate, "PER DAY")
+        try:
+            loan = int(input("HOW MUCH DO YOU WANT TO LOAN: "))
+        except:
+            print("ONLY NUMBERS ALLOWED")
     elif menu == 5:
         print("GOODBYE")
     else:

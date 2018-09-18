@@ -1,4 +1,1 @@
 # pythonintro
-sdasdasdasd
-asdqwe
-asdkjaskdjaskl
